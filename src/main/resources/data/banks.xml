@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="banks-ns"
+       xsi:schemaLocation="banks-ns banks.xsd">
+    <deposit id="q1w5">
+        <bank>Belarusbank</bank>
+        <depositor>
+            <first-name>Egor</first-name>
+            <last-name>Vasiliev</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="BYR">500</currency-amount>
+        <profitability>0.11%</profitability>
+        <time>2021-06-11</time>
+    </deposit>
+    <deposit id="mjut7y" country="DE">
+        <bank>Deutsche Bank</bank>
+        <depositor>
+            <first-name>Daniil</first-name>
+            <last-name>Shevchenkovich</last-name>
+        </depositor>
+        <type>metal</type>
+        <metal-amount metal="XAU">500</metal-amount>
+        <profitability>0.12%</profitability>
+        <time>2019-09-17</time>
+    </deposit>
+    <deposit id="vnh5">
+        <bank>Alfa-Bank</bank>
+        <depositor>
+            <first-name>Nikolai</first-name>
+            <last-name>Vladimir</last-name>
+        </depositor>
+        <type>checking</type>
+        <currency-amount currency="EUR">3789</currency-amount>
+        <profitability>0.09%</profitability>
+        <time>2015-07-11</time>
+    </deposit>
+    <deposit id="m1ty8" country="UA">
+        <bank>Idea Bank</bank>
+        <depositor>
+            <first-name>Vikentiy</first-name>
+            <last-name>Vasylyk</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="UAH">10000</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2020-02-21</time>
+    </deposit>
+    <deposit id="vn54u8" country="RU">
+        <bank>VTB Bank</bank>
+        <depositor>
+            <first-name>Azaliya</first-name>
+            <last-name>Krupina</last-name>
+        </depositor>
+        <type>accumulation</type>
+        <currency-amount currency="RUB">54000</currency-amount>
+        <profitability>0.13%</profitability>
+        <time>2018-11-11</time>
+    </deposit>
+    <deposit id="l4fj">
+        <bank>Belinvestbank</bank>
+        <depositor>
+            <first-name>Vitaliy</first-name>
+            <last-name>Morozov</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="USD">1390</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2021-01-25</time>
+    </deposit>
+    <deposit id="xcv5u">
+        <bank>Belgazprombank</bank>
+        <depositor>
+            <first-name>Oleg</first-name>
+            <last-name>Sokolov</last-name>
+        </depositor>
+        <type>metal</type>
+        <metal-amount metal="XAU">45</metal-amount>
+        <profitability>0.15%</profitability>
+        <time>2017-11-25</time>
+    </deposit>
+    <deposit id="hk49gv" country="PL">
+        <bank>Bank Pekao</bank>
+        <depositor>
+            <first-name>Nataliya</first-name>
+            <last-name>Kovalchuk</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="PLN">2100</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2019-09-03</time>
+    </deposit>
+    <deposit id="xdc4ef">
+        <bank>Belarusbank</bank>
+        <depositor>
+            <first-name>Alina</first-name>
+            <last-name>Vasylyk</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="BYR">3000</currency-amount>
+        <profitability>0.12%</profitability>
+        <time>2020-03-17</time>
+    </deposit>
+    <deposit id="g75d5">
+        <bank>Belagroprombank</bank>
+        <depositor>
+            <first-name>Alexandr</first-name>
+            <last-name>Borysov</last-name>
+        </depositor>
+        <type>metal</type>
+        <metal-amount metal="XAU">15</metal-amount>
+        <profitability>0.07%</profitability>
+        <time>2020-04-18</time>
+    </deposit>
+    <deposit id="g45j3">
+        <bank>Alfa-Bank</bank>
+        <depositor>
+            <first-name>Valeriya</first-name>
+            <last-name>Stasiuk</last-name>
+        </depositor>
+        <type>checking</type>
+        <currency-amount currency="BYR">120</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2021-06-11</time>
+    </deposit>
+    <deposit id="fjn34" country="RU">
+        <bank>Rocketbank</bank>
+        <depositor>
+            <first-name>Avdey</first-name>
+            <last-name>Fedorov</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="RUB">120000</currency-amount>
+        <profitability>0.12%</profitability>
+        <time>2021-05-30</time>
+    </deposit>
+    <deposit id="g548j">
+        <bank>Belarusbank</bank>
+        <depositor>
+            <first-name>Lyubov</first-name>
+            <last-name>Smirnova</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="BYR">311</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2020-06-16</time>
+    </deposit>
+    <deposit id="a876f">
+        <bank>Belveb</bank>
+        <depositor>
+            <first-name>Lidiya</first-name>
+            <last-name>Yakovleva</last-name>
+        </depositor>
+        <type>accumulation</type>
+        <currency-amount currency="BYR">770</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2021-06-13</time>
+    </deposit>
+    <deposit id="k812r">
+        <bank>Alfa-Bank</bank>
+        <depositor>
+            <first-name>Dmitriy</first-name>
+            <last-name>Lagunov</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="EUR">1834</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2019-10-19</time>
+    </deposit>
+    <deposit id="bn5jr">
+        <bank>Belinvestbank</bank>
+        <depositor>
+            <first-name>Anatoliy</first-name>
+            <last-name>Lebedev</last-name>
+        </depositor>
+        <type>checking</type>
+        <currency-amount currency="BYR">1244</currency-amount>
+        <profitability>0.15%</profitability>
+        <time>2020-12-24</time>
+    </deposit>
+</banks>

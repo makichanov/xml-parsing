@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<banks>
+    <deposit id="q1w5">
+        <bank>Belarusbank</bank>
+        <depositor>
+            <first-name>Egor</first-name>
+            <last-name>Vasiliev</last-name>
+        </depositor>
+        <type>demand</type>
+        <currency-amount currency="BYR">500</currency-amount>
+        <profitability>0.11%</profitability>
+        <time>2021-06-11</time>
+    </deposit>
+    <deposit id="mjut7y" country="DE">
+        <bank>Deutsche Bank</bank>
+        <depositor>
+            <first-name>Daniil</first-name>
+            <last-name>Shevchenkovich</last-name>
+        </depositor>
+        <type>metal</type>
+        <metal-amount metal="XAU">500</metal-amount>
+        <profitability>0.12%</profitability>
+        <time>2019-09-17</time>
+    </deposit>
+</banks>

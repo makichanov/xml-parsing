@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="banks-ns"
+           xmlns:tns="banks-ns"
+           elementFormDefault="qualified">
+    <element name="amount" type="tns:amount" abstract="true"/>
+    <element name="currency-amount" type="tns:currency-amount" substitutionGroup="tns:amount"/>
+    <element name="metal-amount" type="tns:metal-amount" substitutionGroup="tns:amount"/>
+    <element name="banks">
+        <complexType>
+            <sequence>
+                <element name="deposit" type="tns:deposit" minOccurs="16" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="deposit">
+        <sequence>
+            <element name="bank" type="string"/>
+            <element name="depositor" type="tns:depositor-name"/>
+            <element name="type" type="tns:deposit-type"/>
+            <element ref="tns:amount"/>
+            <element name="profitability"/>
+            <element name="time" type="date"/>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+        <attribute name="country" type="string" default="BY"/>
+    </complexType>
+    <complexType name="depositor-name">
+        <sequence>
+            <element name="first-name" type="string"/>
+            <element name="last-name" type="string"/>
+        </sequence>
+    </complexType>
+    <simpleType name="profitability">
+        <restriction base="string">
+            <pattern value="(0*\d+(\.\d+)?)%"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="amount">
+        <restriction base="decimal">
+            <minInclusive value="0"/>
+        </restriction>
+    </simpleType>
+    <complexType name="metal-amount">
+        <simpleContent>
+            <extension base="tns:amount">
+                <attribute name="metal" type="string" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="currency-amount">
+        <simpleContent>
+            <extension base="tns:amount">
+                <attribute name="currency" type="string" use="required"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <simpleType name="deposit-type">
+        <restriction base="string">
+            <enumeration value="demand"/>
+            <enumeration value="checking"/>
+            <enumeration value="accumulation"/>
+            <enumeration value="savings"/>
+            <enumeration value="metal"/>
+        </restriction>
+    </simpleType>
+    <!--REMOVE BELOW-->
+    <simpleType name="currency-type">
+        <restriction base="string">
+            <enumeration value="USD"/>
+            <enumeration value="EUR"/>
+            <enumeration value="BYR"/>
+            <enumeration value="RUB"/>
+            <enumeration value="UAH"/>
+            <enumeration value="PLN"/>
+            <enumeration value="GBP"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="metal-type">
+        <restriction base="string">
+            <enumeration value="XAU"/> <!--Gold-->
+            <enumeration value="XAG"/> <!--Silver-->
+            <enumeration value="XPT"/> <!--Platinum-->
+            <enumeration value="XPD"/> <!--Palladium-->
+        </restriction>
+    </simpleType>
+    <simpleType name="country">
+        <restriction base="string">
+            <enumeration value="BY"/>
+            <enumeration value="RU"/>
+            <enumeration value="UA"/>
+            <enumeration value="PL"/>
+            <enumeration value="DE"/>
+        </restriction>
+    </simpleType>
+    <!--REMOVE-->
+</schema>
