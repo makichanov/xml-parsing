@@ -16,10 +16,13 @@ import java.io.File;
 import java.io.IOException;
 
 public class BanksXMLValidator {
-    private static Logger LOG = LogManager.getLogger();
-    private final String BANKS_SCHEMA_NAME = getClass().getResource("data/banks.xsd").getFile();
+    private static final Logger LOG = LogManager.getLogger();
+    private static final String BANKS_SCHEMA_NAME = BanksXMLValidator.class
+            .getResource("/data/banks.xsd").getFile();
 
-    public boolean validate(String xmlFilePath) {
+    private BanksXMLValidator() {}
+
+    public static boolean validate(String xmlFilePath) {
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
         SchemaFactory factory = SchemaFactory.newInstance(language);
         File schemaLocation = new File(BANKS_SCHEMA_NAME);

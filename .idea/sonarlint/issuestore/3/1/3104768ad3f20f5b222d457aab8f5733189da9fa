@@ -1,16 +1,0 @@
-
-H
-java:S2755"3Disable access to external entities in XML parsing.(Öœ¢C
-d
-java:S3008"NRename this field "LOG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûò¹È
-v	java:S116"\Rename this field "BANKS_SCHEMA_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ğÇ…üÿÿÿÿ
-D
-java:S6212"/Declare this local variable with "var" instead.(Öœ¢C
-J
-java:S6212"/Declare this local variable with "var" instead.(á¯œÿÿÿÿÿ
-E
-java:S6212"/Declare this local variable with "var" instead.(äÌ‰ñ
-J
-java:S6212"/Declare this local variable with "var" instead.(¢¬‘ëşÿÿÿÿ
-W
-java:S3457!"AFormat specifiers should be used instead of string concatenation.(ˆü¿ñ
